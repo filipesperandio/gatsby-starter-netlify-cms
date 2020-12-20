@@ -3,6 +3,12 @@ import { Link } from "gatsby"
 import github from "../img/github-icon.svg"
 import Logo from "./logo"
 
+const NavbarLink = ({ children, ...props }) => (
+  <Link activeClassName="active" {...props}>
+    {children}
+  </Link>
+)
+
 const Navbar = class extends React.Component {
   constructor(props) {
     super(props)
@@ -37,9 +43,9 @@ const Navbar = class extends React.Component {
       <nav className="navbar is-transparent" role="navigation" aria-label="main-navigation">
         <div className="container">
           <div className="navbar-brand">
-            <Link to="/" className="navbar-item" title="Logo">
+            <NavbarLink to="/" className="navbar-item" title="Logo">
               <Logo />
-            </Link>
+            </NavbarLink>
             {/* Hamburger menu */}
             <div
               className={`navbar-burger burger ${this.state.navBarActiveClass}`}
@@ -52,15 +58,15 @@ const Navbar = class extends React.Component {
           </div>
           <div id="navMenu" className={`navbar-menu ${this.state.navBarActiveClass}`}>
             <div className="navbar-start has-text-centered">
-              <Link className="navbar-item" to="/about">
-                Sobre nós
-              </Link>
-              <Link className="navbar-item" to="/blog">
+              <NavbarLink className="navbar-item" to="/blog">
                 Artigos e Publicações
-              </Link>
-              <Link className="navbar-item" to="/contact">
+              </NavbarLink>
+              <NavbarLink className="navbar-item" to="/contact">
                 Contato
-              </Link>
+              </NavbarLink>
+              <NavbarLink className="navbar-item" to="/about">
+                Sobre nós
+              </NavbarLink>
             </div>
             <div className="navbar-end has-text-centered"></div>
           </div>
