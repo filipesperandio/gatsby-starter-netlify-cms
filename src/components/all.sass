@@ -108,6 +108,34 @@ $menu-label-color: $white-ter
 
 @import "~bulma"
 
+// Helper Classes
+.full-width-image-container
+  width: 100vw
+  height: 400px
+  position: relative
+  left: 50%
+  right: 50%
+  margin: 2em -50vw
+  background-size: cover
+  background-position: bottom
+  display: flex
+  justify-content: center
+  align-items: center
+
+.content-wrapper
+  min-height: 80vh
+  .full-width-image
+      width: 100vw
+      height: 400px
+      background-size: cover
+      background-position: bottom
+      display: flex
+      justify-content: center
+      align-items: center
+      h1, h2, h3
+        margin-bottom: 0
+        margin-top: 0
+
 .navbar
   position: sticky
   top: 0
