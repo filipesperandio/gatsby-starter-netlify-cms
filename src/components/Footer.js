@@ -11,12 +11,12 @@ const Footer = class extends React.Component {
         <div className="content has-text-centered has-background-black has-text-white-ter">
           <div className="container has-background-black has-text-white-ter">
             <div style={{ maxWidth: "100vw" }} className="columns">
-              <div className="column is-4">
+              <div className="column is-5">
                 <section className="menu">
                   <ul className="menu-list">
                     <li>
                       <Link to="/" className="navbar-item">
-                        Apresentação
+                        Instituto de Espiritualidade e Saúde
                       </Link>
                     </li>
                     <li>
@@ -33,7 +33,7 @@ const Footer = class extends React.Component {
                 </section>
               </div>
               <div className="column is-4">
-                <section>
+                <section className="menu">
                   <ul className="menu-list">
                     <li>
                       <Link className="navbar-item" to="/blog">
@@ -42,13 +42,13 @@ const Footer = class extends React.Component {
                     </li>
                     <li>
                       <Link className="navbar-item" to="/contact">
-                        Contact
+                        Contato
                       </Link>
                     </li>
                   </ul>
                 </section>
               </div>
-              <div className="column is-4 social">
+              <div className="column is-3 social">
                 <a title="Spotify" href="https://open.spotify.com/user/26nfkjwihlyga0c6gnv2xnwyh">
                   <img src={spotify} alt="Spotify" style={{ width: "1em", height: "1em" }} />
                 </a>
