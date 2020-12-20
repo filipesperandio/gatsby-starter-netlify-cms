@@ -1,0 +1,7 @@
+arrowParens: "always"
+jsxBracketSameLine: true
+semi: false
+trailingComma: "es5"
+proseWrap: "preserve"
+singleQuote: false
+printWidth: 100
