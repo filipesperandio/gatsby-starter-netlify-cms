@@ -21,9 +21,9 @@ export default class Index extends React.Component {
   handleSubmit = (e) => {
     e.preventDefault()
     const form = e.target
-    fetch('/', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+    fetch("/?no-cache=1", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
       body: encode({
         'form-name': form.getAttribute('name'),
         ...this.state,
@@ -101,7 +101,7 @@ export default class Index extends React.Component {
                   </div>
                 </div>
                 <div className="field">
-                  <button className="button is-link" type="submit">
+                  <button className="button" type="submit">
                     Send
                   </button>
                 </div>
