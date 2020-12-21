@@ -1,7 +1,7 @@
 import React from "react"
 import { Link } from "gatsby"
 import github from "../img/github-icon.svg"
-import Logo from "./logo"
+import Logo from "./Logo"
 
 const NavbarLink = ({ children, ...props }) => (
   <Link activeClassName="active" {...props}>
