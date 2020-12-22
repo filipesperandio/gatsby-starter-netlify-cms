@@ -16,14 +16,18 @@ export const AboutPageTemplate = ({
   const PageContent = contentComponent || Content
 
   return (
-    <>
-      <PageImage src={image.childImageSharp.fluid.src} credit={imageCredit} />
+    <div>
+      <PageImage src={image.childImageSharp.fluid.src} credit={imageCredit}>
+        <h1 className="has-text-weight-bold is-size-3-mobile is-size-2-tablet is-size-1-widescreen">
+          {title}
+        </h1>
+      </PageImage>
+
       <section className="section section--gradient">
         <div className="container">
           <div className="columns">
             <div className="column is-10 is-offset-1">
               <div className="section">
-                <h2 className="title is-size-3 has-text-weight-bold is-bold-light">{title}</h2>
                 <PageContent className="content" content={content} />
                 <Members members={members} />
               </div>
