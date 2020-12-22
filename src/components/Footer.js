@@ -59,6 +59,7 @@ const Footer = class extends React.Component {
             </div>
           </div>
         </div>
+        <div className="copyright">© 2020 Instituto de Espiritualidade e Saúde</div>
       </footer>
     )
   }
