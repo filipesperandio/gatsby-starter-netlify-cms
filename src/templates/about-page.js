@@ -35,7 +35,7 @@ export const AboutPageTemplate = ({
           </div>
         </div>
       </section>
-    </>
+    </div>
   )
 }
 
