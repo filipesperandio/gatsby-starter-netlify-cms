@@ -1,30 +1,34 @@
-import React from 'react'
+import React from "react"
 
-import Layout from '../../components/Layout'
-import BlogRoll from '../../components/BlogRoll'
+import { Link } from "gatsby"
+
+import BlogRoll from "../../components/BlogRoll"
+import Layout from "../../components/Layout"
+import PageImage from "../../components/PageUnsplashImage"
+
+const image = {
+  src: "/img/blooming3.jpg",
+  author: "Eugene Mykulyak",
+  href:
+    "https://unsplash.com/@eugenegrunge?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText",
+}
 
 export default class BlogIndexPage extends React.Component {
   render() {
     return (
       <Layout>
-        <div
-          className="full-width-image-container margin-top-0"
-          style={{
-            backgroundImage: `url('/img/blog-index.jpg')`,
-          }}
-        >
-          <h1
-            className="has-text-weight-bold is-size-1"
-            style={{
-              boxShadow: '0.5rem 0 0 #f40, -0.5rem 0 0 #f40',
-              backgroundColor: '#f40',
-              color: 'white',
-              padding: '1rem',
-            }}
-          >
-            Latest Stories
-          </h1>
-        </div>
+        <PageImage src={image.src} credit={{ author: image.author, href: image.href }}>
+          <h1 className="has-text-weight-bold is-size-1">Artigos e Publicações</h1>
+        </PageImage>
+        <section className="section">
+          <p>
+            Reunimos aqui uma coletânea de publicações, artigos, livros e materias na area
+            espiritualidade e saúde.
+          </p>
+          <p>
+            Interessado em contribuir? <Link to="/contact">Entra em contato com a gente.</Link>
+          </p>
+        </section>
         <section className="section">
           <div className="container">
             <div className="content">
