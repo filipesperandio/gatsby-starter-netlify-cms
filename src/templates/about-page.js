@@ -1,10 +1,18 @@
 import React from "react"
 import { graphql } from "gatsby"
 import Layout from "../components/Layout"
+import { Members } from "../components/Members"
 import Content, { HTMLContent } from "../components/Content"
 import PageImage from "../components/PageUnsplashImage"
 
-export const AboutPageTemplate = ({ title, content, image, imageCredit, contentComponent }) => {
+export const AboutPageTemplate = ({
+  title,
+  content,
+  image,
+  imageCredit,
+  members,
+  contentComponent,
+}) => {
   const PageContent = contentComponent || Content
 
   return (
@@ -17,6 +25,7 @@ export const AboutPageTemplate = ({ title, content, image, imageCredit, contentC
               <div className="section">
                 <h2 className="title is-size-3 has-text-weight-bold is-bold-light">{title}</h2>
                 <PageContent className="content" content={content} />
+                <Members members={members} />
               </div>
             </div>
           </div>
@@ -37,6 +46,7 @@ const AboutPage = ({ data }) => {
         content={post.html}
         image={post.frontmatter.image}
         imageCredit={post.frontmatter.imageCredit}
+        members={post.frontmatter.members}
       />
     </Layout>
   )
@@ -58,6 +68,20 @@ export const aboutPageQuery = graphql`
           childImageSharp {
             fluid(maxWidth: 2048, quality: 100) {
               ...GatsbyImageSharpFluid
+            }
+          }
+        }
+        members {
+          name
+          role
+          linkedin
+          instagram
+          twitter
+          picture {
+            childImageSharp {
+              fluid(maxWidth: 512, quality: 100) {
+                ...GatsbyImageSharpFluid
+              }
             }
           }
         }

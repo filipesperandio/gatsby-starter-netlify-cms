@@ -6,6 +6,13 @@ image: /img/blooming2.jpg
 imageCredit:
   author: Alext St
   href: "https://unsplash.com/@alexst?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText"
+members:
+  - name: Dra. Mary Rute Gomes Esperandio
+    role: Fundadora
+    linkedin: https://www.linkedin.com/in/mary-esperandio-63362419
+    instagram: https://www.instagram.com/mary.esperandio
+    twitter: ""
+    picture: /img/members/mary-rute.jpg
 ---
 
 O Instituto aspira influenciar a percepção da sociedade brasileira em geral e da área da Saúde em particular, quanto ao impacto da relação entre espiritualidade e saúde. Para isso buscará:
