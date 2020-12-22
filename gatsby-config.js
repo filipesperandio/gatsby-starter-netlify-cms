@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: "Instituo de Espiritualidade e Saúde",
+    title: "Instituto de Espiritualidade e Saúde",
     description:
       "Nossa missão é potencializar a energia vital explorando a relação entre espiritualidade e saúde, ajudando a vida a florescer e frutificar."
   },
