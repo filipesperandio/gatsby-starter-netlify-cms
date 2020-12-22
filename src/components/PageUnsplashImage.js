@@ -3,10 +3,10 @@ import React from "react"
 const PageImage = ({ src, credit, children }) => {
   return (
     <div
-      className="unsplash-image full-width-image margin-top-0"
+      className="unsplash-image page-image full-width-image margin-top-0"
       style={{
         backgroundImage: `url(${src})`,
-        backgroundPosition: `top left`,
+        backgroundPosition: `center center`,
         backgroundAttachment: `initial`,
       }}>
       {children}
