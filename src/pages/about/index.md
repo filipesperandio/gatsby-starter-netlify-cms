@@ -15,7 +15,8 @@ members:
     picture: /img/members/mary-rute.jpg
 ---
 
-O Instituto aspira influenciar a percepção da sociedade brasileira em geral e da área da Saúde em particular, quanto ao impacto da relação entre espiritualidade e saúde. Para isso buscará:
+Aspiramos influenciar a percepção da sociedade brasileira em geral e da área da Saúde em particular, quanto ao impacto da relação entre espiritualidade e saúde.
+Para isso buscamos::
 - Promover a pesquisa científica sobre espiritualidade e saúde
 - Participar na formação de profissionais da área da Saúde para uma prática de cuidado compassivo, que integre adequadamente a dimensão espiritual no atendimento das pessoas que necessitam de cuidado em saúde
 - Divulgar conhecimento baseado em evidência sobre a dimensão espiritual da saúde e do sofrimento, e sobre os impactos da espiritualidade na saúde
