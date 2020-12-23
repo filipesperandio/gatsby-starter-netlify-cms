@@ -1,5 +1,6 @@
 import React from 'react'
-import PreviewCompatibleImage from '../components/PreviewCompatibleImage'
+
+import { Link } from "gatsby"
 
 import research from "../img/research.svg"
 import education from "../img/education.svg"
@@ -10,7 +11,6 @@ const images = { research, education, health }
 const FeatureGrid = ({ gridItems }) => (
   <div className="columns is-multiline">
     {gridItems.map((item) => {
-      console.log("item", images[item.image])
       return (
       <div key={item.text} className="column is-6">
         <section className="section">
@@ -25,6 +25,7 @@ const FeatureGrid = ({ gridItems }) => (
             </div>
           </div>
           <p>{item.text}</p>
+        {item.link && <Link to={item.link}>Saiba mais</Link>}
         </section>
       </div>
     )})}

@@ -36,6 +36,7 @@ intro:
       text: >
         Pesquisas empíricas e teóricas sobre espiritualidade e saúde
     - image: education
+      link: /edu
       text: >
         Treinamento de profissionais em cuidado espiritual e cursos de Práticas Alternativas e Complementares em Saúde
     - image: health
