@@ -33,6 +33,7 @@ mainpitch:
 intro:
   blurbs:
     - image: research
+      link: /blog
       text: >
         Pesquisas empíricas e teóricas sobre espiritualidade e saúde
     - image: education
@@ -40,6 +41,7 @@ intro:
       text: >
         Treinamento de profissionais em cuidado espiritual e cursos de Práticas Alternativas e Complementares em Saúde
     - image: health
+      link: /health
       text: >
         Cuidados médicos e cuidados terapêuticos diversificados com atividades individuais e em grupo
 ---
