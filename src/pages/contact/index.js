@@ -1,6 +1,6 @@
 import React from "react"
 import Layout from "../../components/Layout"
-import { Marker, Envelope } from "../../components/Icons"
+import { Marker, Envelope, Social } from "../../components/Icons"
 import { ContactForm } from "../../components/ContactForm"
 
 const Index = (props) => {
@@ -34,8 +34,18 @@ const Index = (props) => {
                 <Envelope className="mr-2" />
               </div>
               <div className="column">
-                <a href="mailto:contato@espiritualidade-saude.org">
+                <a href="mailto:contato@espiritualidade-saude.org" target="_blank">
                   contato@espiritualidade-saude.org
+                </a>
+              </div>
+            </div>
+            <div className="columns">
+              <div className="column icon">
+                <Social.Instagram className="mr-2" />
+              </div>
+              <div className="column">
+                <a title="Instagram" href="https://instagram.com/institutoespiritualidadesaude" target="_blank">
+                  Instagram
                 </a>
               </div>
             </div>
