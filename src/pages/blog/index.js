@@ -26,7 +26,7 @@ export default class BlogIndexPage extends React.Component {
             espiritualidade e saúde.
           </p>
           <p>
-            Interessado em contribuir? <Link to="/contact">Entra em contato com a gente.</Link>
+            Tem interesse em contribuir? <Link to="/contact">Entra em contato com a gente.</Link>
           </p>
         </section>
         <section className="section">
