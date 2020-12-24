@@ -19,11 +19,11 @@ const SocialPreset = {
 const Members = ({ members }) => {
   return (
     <div>
-      <h2 className="title is-size-3 has-text-weight-bold is-bold-light">Colaboradores</h2>
+      <h2 className="title is-size-3 has-text-weight-bold is-bold-light">Cooperação</h2>
       <p>
-        Acreditamos fortemente na cooperação, na colaboração e que nossos objetivos só serão
-        alcançados com a participação de todos. Abaixo, todos que da sua forma tem colaborado com a
-        formação deste Instituto e a eles, nosso muito obrigado!
+        Acreditamos fortemente na cooperação e que nossos objetivos só serão alcançados com a
+        participação de muitos. Abaixo, aqueles e aquelas que, da sua forma, tem colaborado com a
+        formação deste Instituto e a todos e todas, nosso muito obrigado!
       </p>
       <p>
         Deseja fazer parte desse trabalho? <Link to="/contact">Entra em contato com a gente.</Link>

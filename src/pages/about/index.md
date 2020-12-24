@@ -1,7 +1,7 @@
 ---
 templateKey: about-page
 path: /about
-title: Sobre o Instituto
+title: Sobre nós
 image: /img/blooming2.jpg
 imageCredit:
   author: Alext St
@@ -14,6 +14,8 @@ members:
     twitter: ""
     picture: /img/members/mary-rute.jpg
 ---
+
+# Ainda estamos no começo
 
 Aspiramos influenciar a percepção da sociedade brasileira em geral e da área da Saúde em particular, quanto ao impacto da relação entre espiritualidade e saúde.
 Para isso buscamos::
