@@ -8,6 +8,7 @@ import { ContactForm } from "../components/ContactForm"
 
 export const GenericPageTemplate = ({ title, content, image, imageCredit, contentComponent }) => {
   const PageContent = contentComponent || Content
+  const formName = "contact-" + window.location.pathname.replace("/", "")
 
   return (
     <div>
@@ -23,7 +24,7 @@ export const GenericPageTemplate = ({ title, content, image, imageCredit, conten
             <div className="column is-10 is-offset-1">
               <div className="section">
                 <PageContent className="content" content={content} />
-                <ContactForm formName="contact-education" />
+                <ContactForm formName={formName} />
               </div>
             </div>
           </div>
