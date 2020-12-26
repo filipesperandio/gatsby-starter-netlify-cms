@@ -11,9 +11,6 @@ function encode(data) {
 const ContactForm = ({ children, formName, ...props }) => {
   const [state, setState] = React.useState({ ...props })
 
-  const params = new URLSearchParams(window.location.search)
-  const urlFormName = params.get("formName")
-
   const handleChange = (e) => {
     setState({ [e.target.name]: e.target.value })
   }
@@ -42,7 +39,7 @@ const ContactForm = ({ children, formName, ...props }) => {
       data-netlify-honeypot="bot-field"
       onSubmit={handleSubmit}>
       {/* The `form-name` hidden field is required to support form submissions without JavaScript */}
-      <input type="hidden" name="form-name" value={formName || urlFormName || "contact"} />
+      <input type="hidden" name="form-name" value={formName || "contact"} />
 
       <div hidden>
         <label>

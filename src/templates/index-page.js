@@ -17,6 +17,7 @@ export const IndexPageTemplate = ({
   mainpitch,
   description,
   intro,
+  ...props
 }) => {
   return (
     <div>
@@ -84,7 +85,8 @@ export const IndexPageTemplate = ({
   )
 }
 
-const IndexPage = ({ data }) => {
+const IndexPage = ({ data, ...props }) => {
+  console.log("props", props)
   const { frontmatter } = data.markdownRemark
 
   return (

@@ -6,9 +6,16 @@ import Content, { HTMLContent } from "../components/Content"
 import PageImage from "../components/PageUnsplashImage"
 import { ContactForm } from "../components/ContactForm"
 
-export const GenericPageTemplate = ({ title, content, image, imageCredit, contentComponent }) => {
+export const GenericPageTemplate = ({
+  title,
+  content,
+  image,
+  imageCredit,
+  contentComponent,
+  location,
+}) => {
   const PageContent = contentComponent || Content
-  const formName = "contact-" + window.location.pathname.replace("/", "")
+  const formName = "contact-" + location.pathname.replace("/", "")
 
   return (
     <div>
@@ -34,12 +41,13 @@ export const GenericPageTemplate = ({ title, content, image, imageCredit, conten
   )
 }
 
-const GenericPage = ({ data }) => {
+const GenericPage = ({ data, location }) => {
   const post = data.markdownRemark
 
   return (
     <Layout>
       <GenericPageTemplate
+        location={location}
         contentComponent={HTMLContent}
         title={post.frontmatter.title}
         content={post.html}

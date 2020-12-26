@@ -3,7 +3,11 @@ import Layout from "../../components/Layout"
 import { Marker, Envelope, Social } from "../../components/Icons"
 import { ContactForm } from "../../components/ContactForm"
 
-const Index = (props) => {
+const Index = ({ location }) => {
+  const params = new URLSearchParams(location.search)
+  const urlFormName = params.get("formName")
+  const formName = urlFormName ? `contact-${urlFormName}` : "contact"
+
   return (
     <Layout>
       <iframe
@@ -44,14 +48,17 @@ const Index = (props) => {
                 <Social.Instagram className="mr-2" />
               </div>
               <div className="column">
-                <a title="Instagram" href="https://instagram.com/institutoespiritualidadesaude" target="_blank">
+                <a
+                  title="Instagram"
+                  href="https://instagram.com/institutoespiritualidadesaude"
+                  target="_blank">
                   Instagram
                 </a>
               </div>
             </div>
             <h1>Fale conosco!</h1>
           </div>
-          <ContactForm />
+          <ContactForm formName={formName} />
         </div>
       </section>
     </Layout>
